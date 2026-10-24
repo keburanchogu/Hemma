@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Custom map marker styles */
+.map-price-marker {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18), 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.map-price-marker:hover {
+  transform: scale(1.1);
+  z-index: 50 !important;
+}
+
+.map-price-marker.selected {
+  transform: scale(1.18);
+  z-index: 100 !important;
+}
+
+/* Android touch ripple and sheet styles */
+.touch-press {
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+.touch-press:active {
+  transform: scale(0.96);
+  opacity: 0.9;
+}

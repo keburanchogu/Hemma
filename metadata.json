@@ -1,0 +1,8 @@
+{
+  "name": "StayMap - Registered AirBnB Finder & Neighborhood Insights",
+  "description": "Android-style interactive mapping app for registered AirBnBs with verified city licenses, price breakdowns, traveler ratings, and local neighborhood insights.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
